@@ -12,7 +12,7 @@ public class WeatherContr {
     @Autowired
     private WeatherService weatherService;
 
-    @RequestMapping("/w")
+    @RequestMapping("/")
     public String weather1(){
         return "redirect:/weather";
     }

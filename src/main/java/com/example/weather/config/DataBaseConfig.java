@@ -22,13 +22,23 @@ import java.util.Properties;
 public class DataBaseConfig {
 
 
+//    @Bean
+//    public DataSource dataSource() {
+//        DriverManagerDataSource dataSource = new DriverManagerDataSource();
+//        dataSource.setDriverClassName("org.postgresql.Driver");
+//        dataSource.setPassword("1234");
+//        dataSource.setUrl("jdbc:postgresql://localhost:5432/Waeather");
+//        dataSource.setUsername("postgres");
+//        return dataSource;
+//    }
+
     @Bean
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("org.postgresql.Driver");
-        dataSource.setPassword("1234");
-        dataSource.setUrl("jdbc:postgresql://localhost:5432/Waeather");
-        dataSource.setUsername("postgres");
+        dataSource.setPassword("46d515e6af94782dd7c59f3cd7c36d620a012ee168f93b6e00f38682e8b58155");
+        dataSource.setUrl("jdbc:postgresql://ec2-52-208-221-89.eu-west-1.compute.amazonaws.com:5432/d5iiv04tb94gad");
+        dataSource.setUsername("hslwriehbyfvre");
         return dataSource;
     }
 
